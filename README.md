@@ -1,6 +1,6 @@
 # 🗄️ ReadmeVault
 
-> Centralisez tous vos READMEs de projets en un seul endroit — natif macOS & iOS, rapide, élégant.
+> Centralisez tous vos READMEs de projets en un seul endroit - natif macOS & iOS, rapide, élégant.
 
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-macOS%2014%2B%20%7C%20iOS%2017%2B-blue?style=for-the-badge&logo=swift)
 ![Xcode](https://img.shields.io/badge/Xcode-16%2B-blue?style=for-the-badge&logo=xcode)
@@ -12,27 +12,27 @@
 
 ## Présentation
 
-**ReadmeVault** est une application **macOS & iOS** native construite avec **SwiftUI** qui permet de centraliser, organiser et consulter les fichiers README de tous vos projets. Plus besoin d'ouvrir GitHub ou de fouiller dans vos dossiers — tous vos READMEs sont accessibles en un clic, avec rendu Markdown complet.
+**ReadmeVault** est une application **macOS & iOS** native construite avec **SwiftUI** qui permet de centraliser, organiser et consulter les fichiers README de tous vos projets. Plus besoin d'ouvrir GitHub ou de fouiller dans vos dossiers - tous vos READMEs sont accessibles en un clic, avec rendu Markdown complet.
 
 ---
 
 ## Fonctionnalités
 
 ### Import
-- **Import GitHub** — Colle une URL de dépôt GitHub, l'app récupère automatiquement le README, la description, les topics et le nom via l'API REST GitHub
-- **Import en masse** — Connecte ton compte GitHub via un Personal Access Token et importe tous tes repos (publics **et privés**) en une seule opération, avec sélection individuelle (`⌘A` pour tout sélectionner)
-- **Import fichier local** — Ouvre un fichier `.md` depuis le Finder (`⌘O`), le titre, la description et les tags sont détectés automatiquement
-- **Saisie manuelle** — Crée un projet et colle ton Markdown directement dans l'éditeur
+- **Import GitHub** - Colle une URL de dépôt GitHub, l'app récupère automatiquement le README, la description, les topics et le nom via l'API REST GitHub
+- **Import en masse** - Connecte ton compte GitHub via un Personal Access Token et importe tous tes repos (publics **et privés**) en une seule opération, avec sélection individuelle (`⌘A` pour tout sélectionner)
+- **Import fichier local** - Ouvre un fichier `.md` depuis le Finder (`⌘O`), le titre, la description et les tags sont détectés automatiquement
+- **Saisie manuelle** - Crée un projet et colle ton Markdown directement dans l'éditeur
 
 ### Mise à jour
-- **Rafraîchir depuis GitHub** — Bouton ↺ dans la vue détail pour re-fetch le README, la description et les topics depuis GitHub
-- Support des **repos privés** via token stocké — saisi une fois, réutilisé automatiquement
+- **Rafraîchir depuis GitHub** - Bouton ↺ dans la vue détail pour re-fetch le README, la description et les topics depuis GitHub
+- Support des **repos privés** via token stocké - saisi une fois, réutilisé automatiquement
 - Si aucun topic GitHub n'est défini, les **tags sont auto-détectés** depuis le contenu du README (Swift, React, Docker, etc.)
 
 ### Export & Partage
-- **Export PDF** — Exporte le README rendu en PDF
-- **Share sheet** — Partage le Markdown via les services système (Mail, Messages, AirDrop…)
-- **Copier le README** — Copie le Markdown brut en un clic
+- **Export PDF** - Exporte le README rendu en PDF
+- **Share sheet** - Partage le Markdown via les services système (Mail, Messages, AirDrop…)
+- **Copier le README** - Copie le Markdown brut en un clic
 
 ### Rendu Markdown
 - Rendu HTML via **WKWebView** avec parser Markdown maison
@@ -41,16 +41,16 @@
 - Couleur d'accent personnalisable par projet
 
 ### Organisation
-- **Tags** — ajout libre, filtre par tag en sidebar
-- **Couleur par projet** — palette de 12 couleurs
-- **Recherche plein texte** — filtre en temps réel sur nom, description, tags et contenu README
-- **Tri** — par nom, date de modification ou taille du README
-- **Épingler** — projets épinglés toujours en tête de liste
-- **Multi-sélection** — `⌘+clic` pour sélectionner plusieurs projets, `⌫` pour suppression groupée
-- **Dupliquer** — clone un projet (`⌘D`)
-- **Glisser-déposer** — réordonne les projets manuellement
+- **Tags** - ajout libre, filtre par tag en sidebar
+- **Couleur par projet** - palette de 12 couleurs
+- **Recherche plein texte** - filtre en temps réel sur nom, description, tags et contenu README
+- **Tri** - par nom, date de modification ou taille du README
+- **Épingler** - projets épinglés toujours en tête de liste
+- **Multi-sélection** - `⌘+clic` pour sélectionner plusieurs projets, `⌫` pour suppression groupée
+- **Dupliquer** - clone un projet (`⌘D`)
+- **Glisser-déposer** - réordonne les projets manuellement
 - **3 onglets** par projet : README rendu / Markdown brut / Informations
-- **Compteur** — nombre de mots, caractères et lignes dans l'onglet Infos
+- **Compteur** - nombre de mots, caractères et lignes dans l'onglet Infos
 
 ### Stockage
 - Données stockées dans `~/Library/Application Support/ReadmeVault/`
@@ -71,13 +71,13 @@
 
 ## Installation
 
-### macOS — Télécharger la dernière release
+### macOS - Télécharger la dernière release
 
 Rends-toi sur la page [Releases](https://github.com/Axolotty/ReadmeVault/releases), télécharge `ReadmeVault.zip`, décompresse et glisse `ReadmeVault.app` dans `/Applications`.
 
 > Première ouverture : clic droit → **Ouvrir** pour bypasser Gatekeeper.
 
-### ⚠️ App non signée — étapes obligatoires
+### ⚠️ App non signée - étapes obligatoires
 
 L'app est distribuée sans signature Apple. Après avoir copié `ReadmeVault.app` dans `/Applications` :
 
@@ -101,7 +101,7 @@ killall Dock
 
 > Après ces trois commandes, ReadmeVault apparaît dans le Launchpad et s'ouvre normalement.
 
-### macOS — Build depuis les sources
+### macOS - Build depuis les sources
 
 ```bash
 git clone https://github.com/Axolotty/ReadmeVault.git
@@ -120,7 +120,7 @@ make install   # Copie dans /Applications
 make uninstall # Supprime l'app + toutes les données
 ```
 
-### iOS — Via Xcode
+### iOS - Via Xcode
 
 1. Clone le repo, ouvre `ReadmeVault.xcodeproj`
 2. Sélectionne le scheme `ReadMeVault`
@@ -213,4 +213,4 @@ git push origin v2.2.0
 
 ## Licence
 
-MIT © 2026 Valentin R. (Axolotty) — voir [LICENSE](LICENSE)
+MIT © 2026 Valentin R. (Axolotty) - voir [LICENSE](LICENSE)
